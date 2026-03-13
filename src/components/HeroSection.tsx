@@ -68,6 +68,21 @@ export const HeroSection = () => (
         >
           <ImagePlaceholder label="Screenshot principal do motor / editor" aspectRatio="16/9" />
         </motion.div>
+
+        {/* Mouse scroll indicator */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 1.2 }}
+          className="mt-10 flex justify-center"
+        >
+          <div className="animate-mouse-bounce">
+            <svg width="28" height="44" viewBox="0 0 28 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="1" y="1" width="26" height="42" rx="13" stroke="hsl(var(--muted-foreground))" strokeWidth="2" />
+              <circle cx="14" cy="12" r="2.5" fill="hsl(var(--muted-foreground))" />
+            </svg>
+          </div>
+        </motion.div>
       </div>
     </div>
   </section>
