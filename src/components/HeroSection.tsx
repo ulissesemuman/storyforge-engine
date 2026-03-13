@@ -50,7 +50,10 @@ export const HeroSection = () => (
           className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16"
         >
           <a href="#motor" className="rounded-lg bg-primary px-8 py-3.5 font-semibold text-primary-foreground transition-all hover:brightness-110 glow-gold-sm">
-            Explorar
+            Engine
+          </a>
+          <a href="#editor" className="rounded-lg bg-primary px-8 py-3.5 font-semibold text-primary-foreground transition-all hover:brightness-110 glow-gold-sm">
+            Editor Visual
           </a>
           <a href="#marketplace" className="rounded-lg border border-border bg-secondary px-8 py-3.5 font-semibold text-secondary-foreground transition-all hover:bg-border">
             Marketplace
