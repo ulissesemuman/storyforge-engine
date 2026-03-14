@@ -49,8 +49,8 @@ export const HeroSection = () => (
           transition={{ duration: 0.7, delay: 0.45 }}
           className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16"
         >
-          <a href="#motor" className="rounded-lg bg-primary px-8 py-3.5 font-semibold text-primary-foreground transition-all hover:brightness-110 glow-gold-sm">
-            Engine
+          <a href="https://ulissesemuman.github.io/Gaboma/" target="_blank" rel="noopener noreferrer" className="rounded-lg bg-primary px-8 py-3.5 font-semibold text-primary-foreground transition-all hover:brightness-110 glow-gold-sm">
+            Biblioteca
           </a>
           <a href="#editor" className="rounded-lg bg-primary px-8 py-3.5 font-semibold text-primary-foreground transition-all hover:brightness-110 glow-gold-sm">
             Editor Visual
