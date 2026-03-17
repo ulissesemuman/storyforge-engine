@@ -5,7 +5,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: '/storyforge-engine/',
+  base: '/storyforge-engine/', // Required for GitHub Pages deploy
   server: {
     host: "::",
     port: 8080,
