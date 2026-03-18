@@ -13,6 +13,27 @@ const Index = () => {
 
       <div className="section-divider" />
 
+      <div className="section-divider" />
+
+      <FeatureSection
+        id="biblioteca"
+        badge="Biblioteca"
+        title="Jogue agora, direto no navegador"
+        description="Uma coleção de livros-jogos prontos para jogar online. Sem instalação, sem cadastro — escolha uma história e comece a aventura."
+        features={[
+          "Histórias de diferentes gêneros e complexidades",
+          "Jogue direto no navegador, em qualquer dispositivo",
+          "Exemplos reais do motor em funcionamento",
+          "Inspire-se para criar suas próprias histórias",
+        ]}
+        ctaLabel="Explorar Biblioteca"
+        ctaHref="https://ulissesemuman.github.io/Gaboma/"
+        imagePlaceholder="Screenshot da biblioteca de livros-jogos"
+        reversed
+      />
+
+      <div className="section-divider" />
+
       <FeatureSection
         id="motor"
         badge="Motor"
