@@ -1,3 +1,4 @@
+import { toast } from "sonner";
 import { ScrollReveal } from "./ScrollReveal";
 import { ImagePlaceholder } from "./ImagePlaceholder";
 
@@ -9,6 +10,7 @@ interface FeatureSectionProps {
   features: string[];
   ctaLabel: string;
   ctaHref: string;
+  ctaDisabled?: boolean;
   imagePlaceholder: string;
   reversed?: boolean;
 }
@@ -21,6 +23,7 @@ export const FeatureSection = ({
   features,
   ctaLabel,
   ctaHref,
+  ctaDisabled = false,
   imagePlaceholder,
   reversed = false,
 }: FeatureSectionProps) => (
@@ -41,14 +44,26 @@ export const FeatureSection = ({
               </li>
             ))}
           </ul>
-          <a
-            href={ctaHref}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-lg bg-primary px-6 py-3 font-semibold text-primary-foreground transition-all hover:glow-gold-sm hover:brightness-110"
-          >
-            {ctaLabel} →
-          </a>
+          {ctaDisabled ? (
+            <button
+              onClick={() => toast("Em breve!", {
+                description: "O Marketplace está sendo construído. Fique de olho!",
+                icon: "✦",
+              })}
+              className="inline-flex items-center gap-2 rounded-lg bg-primary px-6 py-3 font-semibold text-primary-foreground transition-all hover:glow-gold-sm hover:brightness-110"
+            >
+              {ctaLabel} →
+            </button>
+          ) : (
+            <a
+              href={ctaHref}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-lg bg-primary px-6 py-3 font-semibold text-primary-foreground transition-all hover:glow-gold-sm hover:brightness-110"
+            >
+              {ctaLabel} →
+            </a>
+          )}
         </ScrollReveal>
         <ScrollReveal className="flex-1 w-full" delay={0.2}>
           <ImagePlaceholder label={imagePlaceholder} aspectRatio="16/10" />

@@ -27,7 +27,7 @@ const Index = () => {
           "Tudo é dinâmico e definido pelo autor",
         ]}
         ctaLabel="Acessar o Motor"
-        ctaHref="#"
+        ctaHref="https://github.com/ulissesemuman/Gaboma"
         imagePlaceholder="Screenshot do motor em ação"
       />
 
@@ -67,6 +67,7 @@ const Index = () => {
         ]}
         ctaLabel="Explorar Marketplace"
         ctaHref="#"
+        ctaDisabled
         imagePlaceholder="Screenshot do marketplace"
       />
 
