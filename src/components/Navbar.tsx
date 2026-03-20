@@ -28,7 +28,7 @@ export const Navbar = () => {
     >
       <div className="container mx-auto px-6 h-16 flex items-center justify-between">
         <a href="#">
-          <img src={`${import.meta.env.BASE_URL}logo.png`} alt="GaBoMa" className="h-8 w-auto" />
+          <img src={`${import.meta.env.BASE_URL}logo.png`} alt="GaBoMa" className="w-24 h-auto" />
         </a>
         <div className="hidden md:flex items-center gap-8">
           {navLinks.map((l) => (
