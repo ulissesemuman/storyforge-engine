@@ -26,7 +26,7 @@ export const Navbar = () => {
         scrolled ? "bg-glass" : "bg-transparent"
       }`}
     >
-      <div className="container mx-auto px-6 h-20 flex items-center justify-between">
+      <div className="container mx-auto px-6 h-32 flex items-center justify-between">
         <a href="#">
           <img src={`${import.meta.env.BASE_URL}logo.png`} alt="GaBoMa" className="w-24 h-auto" />
         </a>
